@@ -11,7 +11,6 @@ import {IOracle} from "grappa-core/interfaces/IOracle.sol";
 
 import {BytesArrayUtil} from "src/libraries/BytesArrayUtil.sol";
 
-
 // shard libraries
 import {NumberUtil} from "grappa-core/libraries/NumberUtil.sol";
 import {ProductIdUtil} from "grappa-core/libraries/ProductIdUtil.sol";
