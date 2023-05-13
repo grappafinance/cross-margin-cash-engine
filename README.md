@@ -5,12 +5,12 @@
   <br/>
   <br/>
   <a href="https://github.com/foundry-rs/foundry"><img src="https://img.shields.io/static/v1?label=foundry-rs&message=foundry&color=blue&logo=github"/></a>
-  <!-- <a href=https://github.com/antoncoding/grappa/actions/workflows/Slither.yml""><img src="https://github.com/antoncoding/grappa/actions/workflows/Slither.yml/badge.svg?branch=master" > </a>
-  <a href=https://github.com/grappafinance/core/actions/workflows/CI.yml""><img src="https://github.com/grappafinance/core/actions/workflows/CI.yml/badge.svg?branch=master"> </a>
-  <a href="https://codecov.io/gh/grappafinance/core" >
-<img src="https://codecov.io/gh/grappafinance/core/branch/master/graph/badge.svg?token=G52EOD1X5B"/>
+  <a href=https://github.com/antoncoding/grappa/actions/workflows/Slither.yml""><img src="https://github.com/antoncoding/grappa/actions/workflows/Slither.yml/badge.svg?branch=master" > </a> 
+  <a href=https://github.com/cross-margin-engine/actions/workflows/CI.yml""><img src="https://github.com/grappafinance/cross-margin-engine/actions/workflows/CI.yml/badge.svg?branch=master"> </a>
+  <<a href="https://codecov.io/gh/grappafinance/cross-margin-engine" >
+<img src="https://codecov.io/gh/grappafinance/cross-margin-engine/branch/master/graph/badge.svg?token=9M0382HKTQ"/>
 </a>
-  <h5 align="center"> Don't waste your capital.</h5> -->
+  
   
 </div>
 
