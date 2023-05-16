@@ -9,8 +9,8 @@ import "grappa-core/config/types.sol";
 import "grappa-core/config/constants.sol";
 import "grappa-core/config/errors.sol";
 
-import "src/config/errors.sol";
-import "src/config/types.sol";
+import "../../src/config/errors.sol";
+import "../../src/config/types.sol";
 
 import "../mocks/MockERC20.sol";
 

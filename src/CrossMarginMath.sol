@@ -9,7 +9,7 @@ import {QuickSort} from "array-lib/sorting/QuickSort.sol";
 import {IGrappa} from "grappa-core/interfaces/IGrappa.sol";
 import {IOracle} from "grappa-core/interfaces/IOracle.sol";
 
-import {BytesArrayUtil} from "src/libraries/BytesArrayUtil.sol";
+import {BytesArrayUtil} from "./libraries/BytesArrayUtil.sol";
 
 // shard libraries
 import {NumberUtil} from "grappa-core/libraries/NumberUtil.sol";

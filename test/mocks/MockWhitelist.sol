@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "src/interfaces/IWhitelist.sol";
+import "../../src/interfaces/IWhitelist.sol";
 
 contract MockWhitelist is IWhitelist {
     mapping(address => bool) public engineAccessList;

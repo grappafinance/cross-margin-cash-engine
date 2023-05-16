@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
 
-import "src/CrossMarginEngine.sol";
-import "src/CrossMarginEngineProxy.sol";
+import "../../src/CrossMarginEngine.sol";
+import "../../src/CrossMarginEngineProxy.sol";
 import "grappa-core/core/Grappa.sol";
 import "grappa-core/core/GrappaProxy.sol";
 import "grappa-core/core/OptionToken.sol";
@@ -17,8 +17,8 @@ import "grappa-core/test/mocks/MockOracle.sol";
 // Types
 import "grappa-core/config/enums.sol";
 import "grappa-core/config/types.sol";
-import "src/config/types.sol";
-import "src/config/errors.sol";
+import "../../src/config/types.sol";
+import "../../src/config/errors.sol";
 
 import "../utils/Utilities.sol";
 

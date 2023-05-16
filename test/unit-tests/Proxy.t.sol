@@ -4,8 +4,8 @@ pragma solidity ^0.8.0;
 // import test base and helpers.
 import "forge-std/Test.sol";
 
-import "src/CrossMarginEngine.sol";
-import "src/CrossMarginEngineProxy.sol";
+import "../../src/CrossMarginEngine.sol";
+import "../../src/CrossMarginEngineProxy.sol";
 
 import {MockEngineV2} from "../mocks/MockEngineV2.sol";
 

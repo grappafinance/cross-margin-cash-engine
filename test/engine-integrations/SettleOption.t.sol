@@ -10,8 +10,8 @@ import "grappa-core/config/types.sol";
 import "grappa-core/config/constants.sol";
 import "grappa-core/config/errors.sol";
 
-import "src/config/errors.sol";
-import "src/config/types.sol";
+import "../../src/config/errors.sol";
+import "../../src/config/types.sol";
 
 // solhint-disable-next-line contract-name-camelcase
 contract TestSettleCoveredCall_CM is CrossMarginFixture {
