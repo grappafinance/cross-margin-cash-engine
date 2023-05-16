@@ -3,14 +3,14 @@ pragma solidity ^0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 
-import {CrossMarginMath} from "../../src/CrossMarginMath.sol";
+import {CrossMarginMath} from "../../CrossMarginMath.sol";
 import "grappa/config/enums.sol";
 import "grappa/config/types.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
 
-import "../../src/config/errors.sol";
-import "../../src/config/types.sol";
+import "../../config/errors.sol";
+import "../../config/types.sol";
 
 /**
  * test full margin calculation for complicated structure

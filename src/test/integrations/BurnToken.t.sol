@@ -10,8 +10,8 @@ import "grappa/config/types.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
 
-import "../../src/config/errors.sol";
-import "../../src/config/types.sol";
+import "../../config/errors.sol";
+import "../../config/types.sol";
 
 // solhint-disable-next-line contract-name-camelcase
 contract TestBurnOption_CM is CrossMarginFixture {

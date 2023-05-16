@@ -9,11 +9,11 @@ import "grappa/config/types.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
 
-import "../../src/config/errors.sol";
-import "../../src/config/types.sol";
+import "../../config/errors.sol";
+import "../../config/types.sol";
 
-import "../../src/config/types.sol";
-import "../../src/libraries/AccountUtil.sol";
+import "../../config/types.sol";
+import "../../libraries/AccountUtil.sol";
 
 contract PreviewCollateralReqBase is CrossMarginFixture {
     uint256 public expiry;

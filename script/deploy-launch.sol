@@ -10,10 +10,10 @@ import "openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
 
 import "grappa/core/Grappa.sol";
 
-import "src/CrossMarginEngine.sol";
-import "src/CrossMarginEngineProxy.sol";
+import "../src/CrossMarginEngine.sol";
+import "../src/CrossMarginEngineProxy.sol";
 
-import "../test/utils/Utilities.sol";
+import "../src/test/utils/Utilities.sol";
 
 contract Deploy is Script, Utilities {
     function run() external {
