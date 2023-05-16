@@ -17,8 +17,8 @@ import "grappa-core/test/mocks/MockOracle.sol";
 // Types
 import "grappa-core/config/enums.sol";
 import "grappa-core/config/types.sol";
-import "src/types.sol";
-import "src/errors.sol";
+import "src/config/types.sol";
+import "src/config/errors.sol";
 
 import "../utils/Utilities.sol";
 

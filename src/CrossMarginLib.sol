@@ -11,11 +11,11 @@ import "grappa-core/libraries/BalanceUtil.sol";
 
 import "grappa-core/config/types.sol";
 import "grappa-core/config/constants.sol";
+import "./libraries/AccountUtil.sol";
 
 // Cross Margin libraries and configs
-import "./AccountUtil.sol";
-import "./types.sol";
-import "./errors.sol";
+import "./config/types.sol";
+import "./config/errors.sol";
 
 /**
  * @title CrossMarginLib

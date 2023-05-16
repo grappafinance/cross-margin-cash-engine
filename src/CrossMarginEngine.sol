@@ -20,15 +20,15 @@ import {BalanceUtil} from "grappa-core/libraries/BalanceUtil.sol";
 import {ProductIdUtil} from "grappa-core/libraries/ProductIdUtil.sol";
 import {TokenIdUtil} from "grappa-core/libraries/TokenIdUtil.sol";
 import {UintArrayLib} from "array-lib/UintArrayLib.sol";
+import {AccountUtil} from "./libraries/AccountUtil.sol";
 
 // Cross margin libraries
-import {AccountUtil} from "./AccountUtil.sol";
 import {CrossMarginMath} from "./CrossMarginMath.sol";
 import {CrossMarginLib} from "./CrossMarginLib.sol";
 
 // Cross margin types
-import "./types.sol";
-import "./errors.sol";
+import "./config/types.sol";
+import "./config/errors.sol";
 
 // global constants and types
 import "grappa-core/config/types.sol";
