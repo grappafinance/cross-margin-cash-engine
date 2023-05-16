@@ -8,7 +8,7 @@ import "openzeppelin/utils/Strings.sol";
 
 import "openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
 
-import "grappa-core/core/Grappa.sol";
+import "grappa/core/Grappa.sol";
 
 import "src/CrossMarginEngine.sol";
 import "src/CrossMarginEngineProxy.sol";

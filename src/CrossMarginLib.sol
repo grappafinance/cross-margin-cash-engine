@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
-import {IGrappa} from "grappa-core/interfaces/IGrappa.sol";
+import {IGrappa} from "grappa/interfaces/IGrappa.sol";
 import {IERC20} from "openzeppelin/token/ERC20/IERC20.sol";
 import {UintArrayLib} from "array-lib/UintArrayLib.sol";
 
-import "grappa-core/libraries/TokenIdUtil.sol";
-import "grappa-core/libraries/ProductIdUtil.sol";
-import "grappa-core/libraries/BalanceUtil.sol";
+import "grappa/libraries/TokenIdUtil.sol";
+import "grappa/libraries/ProductIdUtil.sol";
+import "grappa/libraries/BalanceUtil.sol";
 
-import "grappa-core/config/types.sol";
-import "grappa-core/config/constants.sol";
+import "grappa/config/types.sol";
+import "grappa/config/constants.sol";
 import "./libraries/AccountUtil.sol";
 
 // Cross Margin libraries and configs

@@ -5,24 +5,24 @@ import "forge-std/Test.sol";
 
 import "../../src/CrossMarginEngine.sol";
 import "../../src/CrossMarginEngineProxy.sol";
-import "grappa-core/core/Grappa.sol";
-import "grappa-core/core/GrappaProxy.sol";
-import "grappa-core/core/OptionToken.sol";
+import "grappa/core/Grappa.sol";
+import "grappa/core/GrappaProxy.sol";
+import "grappa/core/OptionToken.sol";
 
 // Mocks
 import "../mocks/MockERC20.sol";
 import "../mocks/MockWhitelist.sol";
-import "grappa-core/test/mocks/MockOracle.sol";
+import "grappa/test/mocks/MockOracle.sol";
 
 // Types
-import "grappa-core/config/enums.sol";
-import "grappa-core/config/types.sol";
+import "grappa/config/enums.sol";
+import "grappa/config/types.sol";
 import "../../src/config/types.sol";
 import "../../src/config/errors.sol";
 
 import "../utils/Utilities.sol";
 
-import {ActionHelper} from "grappa-core/test/shared/ActionHelper.sol";
+import {ActionHelper} from "grappa/test/shared/ActionHelper.sol";
 
 // solhint-disable max-states-count
 

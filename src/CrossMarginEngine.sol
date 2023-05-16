@@ -7,18 +7,18 @@ import {OwnableUpgradeable} from "openzeppelin-upgradeable/access/OwnableUpgrade
 import {ReentrancyGuardUpgradeable} from "openzeppelin-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 
 // inheriting contracts
-import {OptionTransferable} from "grappa-core/core/engines/mixins/OptionTransferable.sol";
-import {BaseEngine} from "grappa-core/core/engines/BaseEngine.sol";
+import {OptionTransferable} from "grappa/core/engines/mixins/OptionTransferable.sol";
+import {BaseEngine} from "grappa/core/engines/BaseEngine.sol";
 import {SafeCast} from "openzeppelin/utils/math/SafeCast.sol";
 
 // interfaces
-import {IMarginEngine} from "grappa-core/interfaces/IMarginEngine.sol";
+import {IMarginEngine} from "grappa/interfaces/IMarginEngine.sol";
 import {IWhitelist} from "./interfaces/IWhitelist.sol";
 
 // libraries
-import {BalanceUtil} from "grappa-core/libraries/BalanceUtil.sol";
-import {ProductIdUtil} from "grappa-core/libraries/ProductIdUtil.sol";
-import {TokenIdUtil} from "grappa-core/libraries/TokenIdUtil.sol";
+import {BalanceUtil} from "grappa/libraries/BalanceUtil.sol";
+import {ProductIdUtil} from "grappa/libraries/ProductIdUtil.sol";
+import {TokenIdUtil} from "grappa/libraries/TokenIdUtil.sol";
 import {UintArrayLib} from "array-lib/UintArrayLib.sol";
 import {AccountUtil} from "./libraries/AccountUtil.sol";
 
@@ -31,10 +31,10 @@ import "./config/types.sol";
 import "./config/errors.sol";
 
 // global constants and types
-import "grappa-core/config/types.sol";
-import "grappa-core/config/enums.sol";
-import "grappa-core/config/constants.sol";
-import "grappa-core/config/errors.sol";
+import "grappa/config/types.sol";
+import "grappa/config/enums.sol";
+import "grappa/config/constants.sol";
+import "grappa/config/errors.sol";
 
 /**
  * @title   CrossMarginEngine

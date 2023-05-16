@@ -9,10 +9,10 @@ import "../../src/CrossMarginEngineProxy.sol";
 
 import {MockEngineV2} from "../mocks/MockEngineV2.sol";
 
-import "grappa-core/config/enums.sol";
-import "grappa-core/config/types.sol";
-import "grappa-core/config/constants.sol";
-import "grappa-core/config/errors.sol";
+import "grappa/config/enums.sol";
+import "grappa/config/types.sol";
+import "grappa/config/constants.sol";
+import "grappa/config/errors.sol";
 
 /**
  * @dev test on implementation contract

@@ -6,16 +6,16 @@ import {UintArrayLib} from "array-lib/UintArrayLib.sol";
 import {IntArrayLib} from "array-lib/IntArrayLib.sol";
 import {QuickSort} from "array-lib/sorting/QuickSort.sol";
 
-import {IGrappa} from "grappa-core/interfaces/IGrappa.sol";
-import {IOracle} from "grappa-core/interfaces/IOracle.sol";
+import {IGrappa} from "grappa/interfaces/IGrappa.sol";
+import {IOracle} from "grappa/interfaces/IOracle.sol";
 
 import {BytesArrayUtil} from "./libraries/BytesArrayUtil.sol";
 
 // shard libraries
-import {NumberUtil} from "grappa-core/libraries/NumberUtil.sol";
-import {ProductIdUtil} from "grappa-core/libraries/ProductIdUtil.sol";
-import {TokenIdUtil} from "grappa-core/libraries/TokenIdUtil.sol";
-import {BalanceUtil} from "grappa-core/libraries/BalanceUtil.sol";
+import {NumberUtil} from "grappa/libraries/NumberUtil.sol";
+import {ProductIdUtil} from "grappa/libraries/ProductIdUtil.sol";
+import {TokenIdUtil} from "grappa/libraries/TokenIdUtil.sol";
+import {BalanceUtil} from "grappa/libraries/BalanceUtil.sol";
 
 // cross margin libraries
 import {AccountUtil} from "./libraries/AccountUtil.sol";
@@ -24,9 +24,9 @@ import {AccountUtil} from "./libraries/AccountUtil.sol";
 import "./config/types.sol";
 import "./config/errors.sol";
 
-import "grappa-core/config/constants.sol";
-import "grappa-core/config/enums.sol";
-import "grappa-core/config/errors.sol";
+import "grappa/config/constants.sol";
+import "grappa/config/enums.sol";
+import "grappa/config/errors.sol";
 
 /**
  * @title   CrossMarginMath
