@@ -20,6 +20,3 @@
 [submodule "lib/core-cash"]
 	path = lib/core-cash
 	url = https://github.com/grappafinance/core-cash
-[submodule "lib/core-physical"]
-	path = lib/core-physical
-	url = https://github.com/grappafinance/core-physical
