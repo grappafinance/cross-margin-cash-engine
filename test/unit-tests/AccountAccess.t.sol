@@ -7,8 +7,8 @@ import {CrossMarginFixture} from "../integrations/CrossMarginFixture.t.sol";
 import "grappa/config/types.sol";
 import "grappa/config/errors.sol";
 
-import "../../config/errors.sol";
-import "../../config/types.sol";
+import "../../src/config/errors.sol";
+import "../../src/config/types.sol";
 
 contract CrossMarginEngineAccessTest is CrossMarginFixture {
     uint256 private depositAmount = 100 * 1e6;
