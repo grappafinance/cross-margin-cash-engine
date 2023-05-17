@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "grappa/config/types.sol";
+import {Balance} from "grappa/config/types.sol";
 
 /**
  * @dev base unit of cross margin account. This is the data stored in the state

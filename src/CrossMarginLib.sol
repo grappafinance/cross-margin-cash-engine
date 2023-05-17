@@ -6,15 +6,12 @@ import {IERC20} from "openzeppelin/token/ERC20/IERC20.sol";
 import {UintArrayLib} from "array-lib/UintArrayLib.sol";
 
 import "grappa/libraries/TokenIdUtil.sol";
-import "grappa/libraries/ProductIdUtil.sol";
 import "grappa/libraries/BalanceUtil.sol";
 
-import "grappa/config/types.sol";
-import "grappa/config/constants.sol";
 import "./libraries/AccountUtil.sol";
 
 // Cross Margin libraries and configs
-import "./config/types.sol";
+import {CrossMarginAccount} from "./config/types.sol";
 import "./config/errors.sol";
 
 /**
@@ -25,7 +22,6 @@ library CrossMarginLib {
     using BalanceUtil for Balance[];
     using AccountUtil for Position[];
     using UintArrayLib for uint256[];
-    using ProductIdUtil for uint40;
     using TokenIdUtil for uint256;
 
     /**

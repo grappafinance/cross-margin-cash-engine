@@ -5,8 +5,8 @@ pragma solidity ^0.8.0;
 import {CrossMarginFixture} from "./CrossMarginFixture.t.sol";
 import "../mocks/MockERC20.sol";
 
+import {ActionArgs, BatchExecute} from "grappa/config/types.sol";
 import "grappa/config/enums.sol";
-import "grappa/config/types.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
 

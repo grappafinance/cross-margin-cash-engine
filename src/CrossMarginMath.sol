@@ -24,6 +24,7 @@ import {AccountUtil} from "./libraries/AccountUtil.sol";
 import "./config/types.sol";
 import "./config/errors.sol";
 
+import {ProductDetails} from "grappa/config/types.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/enums.sol";
 import "grappa/config/errors.sol";

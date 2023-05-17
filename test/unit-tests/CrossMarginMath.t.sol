@@ -5,7 +5,6 @@ import {Test} from "forge-std/Test.sol";
 
 import {CrossMarginMath} from "../../src/CrossMarginMath.sol";
 import "grappa/config/enums.sol";
-import "grappa/config/types.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
 

@@ -5,8 +5,8 @@ pragma solidity ^0.8.0;
 import {CrossMarginFixture} from "./CrossMarginFixture.t.sol";
 import {stdError} from "forge-std/Test.sol";
 
+import {ActionArgs} from "grappa/config/types.sol";
 import "grappa/config/enums.sol";
-import "grappa/config/types.sol";
 import "grappa/config/errors.sol";
 
 import "../../src/config/errors.sol";

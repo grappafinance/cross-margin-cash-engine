@@ -5,7 +5,7 @@ import "forge-std/Test.sol";
 
 import "../../src/CrossMarginEngine.sol";
 import "../../src/CrossMarginEngineProxy.sol";
-import "grappa/core/Grappa.sol";
+import {Grappa} from "grappa/core/Grappa.sol";
 import "grappa/core/GrappaProxy.sol";
 import "grappa/core/OptionToken.sol";
 
@@ -15,8 +15,8 @@ import "../mocks/MockWhitelist.sol";
 import "grappa/test/mocks/MockOracle.sol";
 
 // Types
+import {ActionArgs} from "grappa/config/types.sol";
 import "grappa/config/enums.sol";
-import "grappa/config/types.sol";
 import "../../src/config/types.sol";
 import "../../src/config/errors.sol";
 

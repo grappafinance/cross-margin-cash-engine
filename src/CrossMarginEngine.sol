@@ -31,7 +31,7 @@ import "./config/types.sol";
 import "./config/errors.sol";
 
 // global constants and types
-import "grappa/config/types.sol";
+import {BatchExecute, ActionArgs} from "grappa/config/types.sol";
 import "grappa/config/enums.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";

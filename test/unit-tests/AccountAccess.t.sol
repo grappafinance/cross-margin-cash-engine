@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 // import test base and helpers.
 import {CrossMarginFixture} from "../integrations/CrossMarginFixture.t.sol";
 
-import "grappa/config/types.sol";
+import {ActionArgs} from "grappa/config/types.sol";
 import "grappa/config/errors.sol";
 
 import "../../src/config/errors.sol";

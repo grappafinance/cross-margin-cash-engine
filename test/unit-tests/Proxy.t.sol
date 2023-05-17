@@ -10,7 +10,6 @@ import "../../src/CrossMarginEngineProxy.sol";
 import {MockEngineV2} from "../mocks/MockEngineV2.sol";
 
 import "grappa/config/enums.sol";
-import "grappa/config/types.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
 
