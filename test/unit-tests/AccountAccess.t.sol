@@ -10,7 +10,7 @@ import "grappa/config/errors.sol";
 import "../../src/config/errors.sol";
 import "../../src/config/types.sol";
 
-contract CrossMarginEngineAccessTest is CrossMarginFixture {
+contract CrossMarginCashEngineAccessTest is CrossMarginFixture {
     uint256 private depositAmount = 100 * 1e6;
 
     address private subAccountIdToModify;

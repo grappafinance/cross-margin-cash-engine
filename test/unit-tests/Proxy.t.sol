@@ -4,8 +4,8 @@ pragma solidity ^0.8.0;
 // import test base and helpers.
 import "forge-std/Test.sol";
 
-import "../../src/CrossMarginEngine.sol";
-import "../../src/CrossMarginEngineProxy.sol";
+import "../../src/CrossMarginCashEngine.sol";
+import "../../src/CrossMarginCashEngineProxy.sol";
 
 import {MockEngineV2} from "../mocks/MockEngineV2.sol";
 
@@ -17,14 +17,14 @@ import "grappa/config/errors.sol";
  * @dev test on implementation contract
  */
 contract EngineProxyTest is Test {
-    CrossMarginEngine public implementation;
-    CrossMarginEngine public engine;
+    CrossMarginCashEngine public implementation;
+    CrossMarginCashEngine public engine;
 
     constructor() {
-        implementation = new CrossMarginEngine(address(0), address(0));
-        bytes memory data = abi.encode(CrossMarginEngine.initialize.selector);
+        implementation = new CrossMarginCashEngine(address(0), address(0));
+        bytes memory data = abi.encode(CrossMarginCashEngine.initialize.selector);
 
-        engine = CrossMarginEngine(address(new CrossMarginEngineProxy(address(implementation), data)));
+        engine = CrossMarginCashEngine(address(new CrossMarginCashEngineProxy(address(implementation), data)));
     }
 
     function testImplementationContractOwnerIsZero() public {

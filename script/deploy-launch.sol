@@ -10,8 +10,8 @@ import "openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
 
 import "grappa/core/Grappa.sol";
 
-import {CrossMarginEngine} from "../src/CrossMarginEngine.sol";
-import {CrossMarginEngineProxy} from "../src/CrossMarginEngineProxy.sol";
+import {CrossMarginCashEngine} from "../src/CrossMarginCashEngine.sol";
+import {CrossMarginCashEngineProxy} from "../src/CrossMarginCashEngineProxy.sol";
 
 import "../test/utils/Utilities.sol";
 
@@ -28,9 +28,9 @@ contract Deploy is Script, Utilities {
 
     function deployCrossMarginEngine(Grappa grappa, address optionToken) public returns (address crossMarginEngine) {
         // ============ Deploy Cross Margin Engine (Upgradable) ============== //
-        address engineImplementation = address(new CrossMarginEngine(address(grappa), optionToken));
-        bytes memory engineData = abi.encode(CrossMarginEngine.initialize.selector);
-        crossMarginEngine = address(new CrossMarginEngineProxy(engineImplementation, engineData));
+        address engineImplementation = address(new CrossMarginCashEngine(address(grappa), optionToken));
+        bytes memory engineData = abi.encode(CrossMarginCashEngine.initialize.selector);
+        crossMarginEngine = address(new CrossMarginCashEngineProxy(engineImplementation, engineData));
 
         console.log("CrossMargin Engine: \t\t", crossMarginEngine);
 

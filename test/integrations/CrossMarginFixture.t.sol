@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
 
-import "../../src/CrossMarginEngine.sol";
-import "../../src/CrossMarginEngineProxy.sol";
+import "../../src/CrossMarginCashEngine.sol";
+import "../../src/CrossMarginCashEngineProxy.sol";
 import {Grappa} from "grappa/core/Grappa.sol";
 import "grappa/core/GrappaProxy.sol";
 import "grappa/core/OptionToken.sol";
@@ -30,7 +30,7 @@ import {ActionHelper} from "grappa/test/shared/ActionHelper.sol";
  * helper contract for full margin integration test to inherit.
  */
 abstract contract CrossMarginFixture is Test, ActionHelper, Utilities {
-    CrossMarginEngine internal engine;
+    CrossMarginCashEngine internal engine;
     Grappa internal grappa;
     OptionToken internal option;
 
@@ -77,11 +77,11 @@ abstract contract CrossMarginFixture is Test, ActionHelper, Utilities {
 
         grappa = Grappa(address(new GrappaProxy(grappaImplementation, grappaData))); // 6
 
-        address engineImplementation = address(new CrossMarginEngine(address(grappa), address(option))); // nonce 7
+        address engineImplementation = address(new CrossMarginCashEngine(address(grappa), address(option))); // nonce 7
 
-        bytes memory engineData = abi.encode(CrossMarginEngine.initialize.selector);
+        bytes memory engineData = abi.encode(CrossMarginCashEngine.initialize.selector);
 
-        engine = CrossMarginEngine(address(new CrossMarginEngineProxy(engineImplementation, engineData))); // 8
+        engine = CrossMarginCashEngine(address(new CrossMarginCashEngineProxy(engineImplementation, engineData))); // 8
 
         whitelist = new MockWhitelist();
 

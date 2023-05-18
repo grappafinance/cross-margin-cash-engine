@@ -23,8 +23,8 @@ import {UintArrayLib} from "array-lib/UintArrayLib.sol";
 import {AccountUtil} from "./libraries/AccountUtil.sol";
 
 // Cross margin libraries
-import {CrossMarginMath} from "./CrossMarginMath.sol";
-import {CrossMarginLib} from "./CrossMarginLib.sol";
+import {CrossMarginCashMath} from "./CrossMarginCashMath.sol";
+import {CrossMarginCashLib} from "./CrossMarginCashLib.sol";
 
 // Cross margin types
 import "./config/types.sol";
@@ -37,14 +37,14 @@ import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
 
 /**
- * @title   CrossMarginEngine
+ * @title   CrossMarginCashEngine
  * @author  @dsshap, @antoncoding
  * @notice  Fully collateralized margin engine
  *             Users can deposit collateral into Cross Margin and mint optionTokens (debt) out of it.
  *             Interacts with OptionToken to mint / burn
  *             Interacts with grappa to fetch registered asset info
  */
-contract CrossMarginEngine is
+contract CrossMarginCashEngine is
     OptionTransferable,
     IMarginEngine,
     OwnableUpgradeable,
@@ -53,7 +53,7 @@ contract CrossMarginEngine is
 {
     using AccountUtil for Position[];
     using BalanceUtil for Balance[];
-    using CrossMarginLib for CrossMarginAccount;
+    using CrossMarginCashLib for CrossMarginAccount;
     using ProductIdUtil for uint40;
     using SafeCast for uint256;
     using SafeCast for int256;
@@ -462,7 +462,7 @@ contract CrossMarginEngine is
      * @dev get minimum collateral requirement for an account
      */
     function _getMinCollateral(CrossMarginAccount memory account) internal view returns (Balance[] memory) {
-        return CrossMarginMath.getMinCollateralForPositions(grappa, account.shorts, account.longs);
+        return CrossMarginCashMath.getMinCollateralForPositions(grappa, account.shorts, account.longs);
     }
 
     /**

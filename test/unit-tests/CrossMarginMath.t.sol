@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import {Test} from "forge-std/Test.sol";
 
-import {CrossMarginMath} from "../../src/CrossMarginMath.sol";
+import {CrossMarginCashMath} from "../../src/CrossMarginCashMath.sol";
 import "grappa/config/enums.sol";
 import "grappa/config/constants.sol";
 import "grappa/config/errors.sol";
@@ -16,7 +16,7 @@ import "../../src/config/types.sol";
  */
 // solhint-disable-next-line contract-name-camelcase
 contract TestStructures_CMM is Test {
-    using CrossMarginMath for CrossMarginDetail;
+    using CrossMarginCashMath for CrossMarginDetail;
 
     int256[] private putWeights;
     uint256[] private putStrikes;
@@ -581,7 +581,7 @@ contract TestStructures_CMM is Test {
 
 // solhint-disable-next-line contract-name-camelcase
 contract TestVanillaCall_CMM is Test {
-    using CrossMarginMath for CrossMarginDetail;
+    using CrossMarginCashMath for CrossMarginDetail;
 
     int256[] private putWeights;
     uint256[] private putStrikes;
@@ -621,7 +621,7 @@ contract TestVanillaCall_CMM is Test {
 
 // solhint-disable-next-line contract-name-camelcase
 contract TestVanillaPut_CMM is Test {
-    using CrossMarginMath for CrossMarginDetail;
+    using CrossMarginCashMath for CrossMarginDetail;
 
     int256[] private putWeights;
     uint256[] private putStrikes;
@@ -660,7 +660,7 @@ contract TestVanillaPut_CMM is Test {
 }
 
 contract TestStrangles is Test {
-    using CrossMarginMath for CrossMarginDetail;
+    using CrossMarginCashMath for CrossMarginDetail;
 
     int256[] private putWeights;
     uint256[] private putStrikes;
@@ -757,7 +757,7 @@ contract TestStrangles is Test {
 
 // solhint-disable-next-line contract-name-camelcase
 contract TestCornerCases_CMM is Test {
-    using CrossMarginMath for CrossMarginDetail;
+    using CrossMarginCashMath for CrossMarginDetail;
 
     int256[] private putWeights;
     uint256[] private putStrikes;

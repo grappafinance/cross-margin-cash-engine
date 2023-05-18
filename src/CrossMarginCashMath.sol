@@ -30,11 +30,11 @@ import "grappa/config/enums.sol";
 import "grappa/config/errors.sol";
 
 /**
- * @title   CrossMarginMath
+ * @title   CrossMarginCashMath
  * @notice  this library is in charge of calculating the min collateral for a given cross margin account
  * @dev     deployed as a separate contract to save space
  */
-library CrossMarginMath {
+library CrossMarginCashMath {
     using BalanceUtil for Balance[];
     using AccountUtil for CrossMarginDetail[];
     using AccountUtil for Position[];
